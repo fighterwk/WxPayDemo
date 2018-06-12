@@ -9,11 +9,11 @@ android {
             storeFile file('../keystore/debug.keystore')
             storePassword 'android'
         }
-        km {
-            keyAlias 'kmapp'
-            keyPassword 'km123456'
-            storeFile file('../keystore/km.jks')
-            storePassword 'km123456'
+        xxx {
+            keyAlias 'xxx'
+            keyPassword 'xxx'
+            storeFile file('../keystore/xxx.jks')
+            storePassword 'xxx'
         }
     }
 
@@ -29,14 +29,7 @@ android {
             buildConfigField("String", 'JSON', '"{\\"appid\\":\\"wxb4ba3c02aa476ea1\\",\\"partnerid\\":\\"1900006771\\",\\"package\\":\\"Sign=WXPay\\",\\"noncestr\\":\\"cf5a43ebaa393c09ddaba249ac6ac039\\",\\"timestamp\\":1528684713,\\"prepayid\\":\\"wx11103833887422b9e67d9c852341179916\\",\\"sign\\":\\"956F41E99F3FB17C1E9209BACB7D7448\\"}"')
             signingConfig signingConfigs.debug
         }
-        // 康美生活馆版本
-        km {
-            applicationId "com.wlyy.cdshg"
-            buildConfigField("String", "APP_ID", '"wx017d1f002a9fb187"')
-            buildConfigField("String", 'JSON', '"{\\"appid\\": \\"wx017d1f002a9fb187\\",\\t\\"noncestr\\": \\"523d3ec32df442d0a9081c4e31f78fce\\",\\t\\"package\\": \\"Sign=WXPay\\",\\"partnerid\\": \\"1507022481\\",\\t\\"prepayid\\": \\"wx1109400763995908bcdb85532194069024\\",\\t\\"sign\\": \\"CFF3C38E8FD245BAE38DCF4CB614758A\\",\\t\\"timestamp\\": \\"1528681208\\"}"')
-            dimension "wxtest"
-            signingConfig signingConfigs.km
-        }
+
     }
 
     compileSdkVersion 26
